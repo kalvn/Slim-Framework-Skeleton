@@ -1,0 +1,22 @@
+{% extends "parts/base.html" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+
+{% block global %}
+    <div id="messages" class="container">
+        <div class="alert alert-danger">{{ flash['error'] }}</div>
+    </div>
+    {% endif %}
+    {% if flash['success'] %}
+    <div id="messages" class="container">
+        <div class="alert alert-success">{{ flash['success'] }}</div>
+    </div>
+    {% endif %}
+    {% if flash['info'] %}
+    <div id="messages" class="container">
+        <div class="alert alert-info">{{ flash['info'] }}</div>
+    </div>
+    {% endif %}
+
+    {% block content %}{% endblock %}
+{% endblock %}

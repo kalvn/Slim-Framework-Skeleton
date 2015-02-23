@@ -1,0 +1,25 @@
+{
+  "name": "Slim Framework Skeleton",
+  "version": "1.0.0",
+  "authors": [
+  "kalvn <kalvnthereal@gmail.com>"
+  ],
+  "moduleType": [
+  "globals"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+  "**/.*",
+  "node_modules",
+  "bower_components",
+  "test",
+  "tests"
+  ],
+  "dependencies": {
+   "jquery": "~1.11.0",
+   "bootstrap": "~3.3.0",
+   "html5shiv": ">=3.7.2",
+   "respond": ">=1.4.2"
+ }
+}

@@ -1,0 +1,13 @@
+{% extends "parts/base_content.html" %}
+
+{% block title %}Error | {{ parent() }}{% endblock %}
+
+{% block content %}
+<div class="container">
+
+<h1 class="text-center">Sorry, there was an error...</h1>
+<p><strong>Details</strong></p>
+<p><samp>{{ message }}</samp></p>
+
+</div>
+{% endblock %}

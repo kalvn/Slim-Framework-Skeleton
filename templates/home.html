@@ -1,0 +1,9 @@
+{% extends "parts/base_content.html" %}
+
+{% block title %}Home | {{ parent() }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <p>Hello {% if name %}{{ name }}{% else %}world{% endif %}!</p>
+</div>
+{% endblock %}

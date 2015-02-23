@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" {% if page %}class="page{{ page }}"{% endif %}>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}My App{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{{ baseUrl() }}/assets/lib/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ baseUrl() }}/assets/css/override.css">
+        <link rel="stylesheet" type="text/css" href="{{ baseUrl() }}/assets/css/main.css">
+        <script type="text/javascript" src="{{ baseUrl() }}/assets/lib/jquery/dist/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            {% block global %}{% endblock %}
+        </div>
+    </body>
+    <script type="text/javascript">
+    var app = {
+        baseUrl: '{{ baseUrl() }}',
+        currentUrl: '{{ currentUrl() }}'
+    };
+    </script>
+    <script type="text/javascript" src="{{ baseUrl() }}/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ baseUrl() }}/assets/js/main.js"></script>
+</html>

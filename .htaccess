@@ -1,0 +1,15 @@
+Options -Indexes
+
+Order allow,deny
+
+Allow from all
+
+<FilesMatch (\.htaccess|composer.*|.*bower.*|notes\.txt|.*sublime.*)>
+    Deny from all 
+</FilesMatch>
+
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]

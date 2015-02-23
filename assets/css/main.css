@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/antonia/Antonio-Light.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/antonio/Antonio-Regular.ttf')  format('truetype');
+}
+/* latin */
+@font-face {
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/antonio/Antonio-Bold.ttf') format('truetype');
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+/* HELPERS */
+.mts{
+	margin-top: 5px;
+}
+.mtm{
+	margin-top: 10px;
+}
+.mtl{
+	margin-top: 20px;
+}
+.mbs{
+	margin-bottom: 5px;
+}
+.mbm{
+	margin-bottom: 10px;
+}
+.mbl{
+	margin-bottom: 20px;
+}
