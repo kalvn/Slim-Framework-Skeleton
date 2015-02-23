@@ -3,6 +3,7 @@
 {% block title %}{{ parent() }}{% endblock %}
 
 {% block global %}
+	{% if flash['error'] %}
     <div id="messages" class="container">
         <div class="alert alert-danger">{{ flash['error'] }}</div>
     </div>
