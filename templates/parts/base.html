@@ -12,13 +12,14 @@
         <div>
             {% block global %}{% endblock %}
         </div>
+
+        <script type="text/javascript">
+        var app = {
+            baseUrl: '{{ baseUrl() }}',
+            currentUrl: '{{ currentUrl() }}'
+        };
+        </script>
+        <script type="text/javascript" src="{{ baseUrl() }}/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{ baseUrl() }}/assets/js/main.js"></script>
     </body>
-    <script type="text/javascript">
-    var app = {
-        baseUrl: '{{ baseUrl() }}',
-        currentUrl: '{{ currentUrl() }}'
-    };
-    </script>
-    <script type="text/javascript" src="{{ baseUrl() }}/assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="{{ baseUrl() }}/assets/js/main.js"></script>
 </html>
